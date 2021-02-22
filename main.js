@@ -23,4 +23,12 @@ class ClassicGuitar {
   setPrice(newPrice) {
     this.price = newPrice;
   }
+
+  static detectSound(sound) {
+    if (sound == "🎸") {
+      return "ElectricGuitar";
+    } else if (sound == "🔊") {
+      return "BassGuitar";
+    }
+  }
 }
