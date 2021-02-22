@@ -32,3 +32,13 @@ class ClassicGuitar {
     }
   }
 }
+class ElectricGuitar extends ClassicGuitar {
+  constructor(manufactureYear, brand, price, longNeck) {
+    super(manufactureYear, brand, price);
+    this.longNeck = longNeck;
+  }
+  play() {
+    super.play();
+    return "🎸🎸🎸";
+  }
+}
