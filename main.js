@@ -67,3 +67,17 @@ function shuffleArray(array) {
     array[j] = temp;
   }
 }
+
+let myGuitar = new ClassicGuitar(1990, "fff", 12);
+console.log(myGuitar.play());
+console.log(myGuitar.price);
+console.log(myGuitar.used);
+myGuitar.setPrice(30);
+myGuitar.getPrice();
+
+let bs = new BassGuitar(200, "sss", 12);
+console.log(bs.playSolo());
+
+ClassicGuitar.detectSound("🎸");
+let eG = new ElectricGuitar(1991, "kkk", 15, true);
+console.log(eG.play());
